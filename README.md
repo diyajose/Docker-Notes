@@ -1,6 +1,6 @@
 # Docker-Notes
 <p align="center">
-<img src="#" width=700>
+<img src="/screenshots/ss.gif" width=700>
 </p>
 
 ### An interactive Landing Page Design for the Notes Application.
@@ -28,14 +28,9 @@ This site is a web-based platform designed for creating, managing, and sharing d
 * 
 ## Website ScreenShots:
 <p align="center">
-<img src="#" width=700>
+<img src="/screenshots/ss1.png" width=700>
 </p>
-<p align="center">
-<img src="#" width=700>
-</p>
-<p align="center">
-<img src="#" width=700>
-</p>
+
 
 ## Support
 
