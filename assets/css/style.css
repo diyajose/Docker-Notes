@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.hero {
+    display: flex;
+    gap: 2rem;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-right: 2px solid #f1f1f1;
+}
+.sidebar h3 {
+    margin-bottom: 80px;
+}
+.sidebar button {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+.colours {
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.content {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content .boxes {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    padding: 15px 25px;
+}
+.star-class{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.star {
+    
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    color: yellow;
+    font-size: 0.7rem;
+    border-radius: 50px;
+}
+.pen {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    color: white;
+    font-size: .9rem;
+    border-radius: 50px;
+}
+.note {
+    height: 120px;
+    width: 200px;
+}
+.date {
+
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.bg-yellow {
+    background-color: #fbca71  ;
+}
+.bg-red {
+    background-color: #fd9173  ;
+}
+.bg-blue {
+    background-color: #0fe9ff ;
+}
+.bg-green {
+    background-color: #e5f48c ;
+}
+.bg-lavandar {
+    background-color: #b787ff ;
+}
+h2 {
+    margin: 30px 0 50px 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+.search-bar {
+    padding: 20px;
+    display: flex;
+    gap: 8px;
+}
+.search-bar input {
+    border: none;
+}
+.search-bar input::placeholder {
+    font-size: 16px;
+    color: rgb(187, 175, 175);
+}
+.search-bar i {
+    color: rgb(187, 175, 175);
+
+}
+#edit {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    display: none;
+}

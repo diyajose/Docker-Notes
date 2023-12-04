@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>Docker Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="hero">
+            <div class="sidebar">
+                <h3>Docker</h3>
+                <button @click="animate"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                <div class="colours bg-yellow">
+                    <div class="colours bg-red">
+                        <div class="colours bg-blue">
+                            <div class="colours bg-lavandar">
+                            <div class="colours bg-green"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-section">
+                <div class="search-bar">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <h2>Notes</h2>
+                <div class="content">
+                    <div class="boxes bg-yellow" id="edit">
+                        <p class="note">This is Docker Note.</p>
+                    </div>
+                    <div class="boxes bg-red">
+                        <div class="star-class">
+                            <div class="star-class">
+                                <button class="star"><i class="fa fa-star" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                        <p class="note">The beginning of screenless design:UI jobs to be taken over by Solution
+                            Architect.
+                        </p>
+                        <div class="date">
+                            <p>May 21, 2020</p>
+                            <button class="pen"><i class="fa fa-pen" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="boxes bg-green">
+                        <div class="star-class">
+                            <button class="star"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        </div>
+                        <p class="note">13 Things You Should Give Up If You Want To Be a Successful UX Designer.</p>
+                        <div class="date">
+                            <p>May 25, 2020</p>
+                            <button class="pen"><i class="fa fa-pen" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="boxes bg-blue">
+                        <div class="star-class">
+                            <button class="star"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        </div>
+                        <p class="note">The Psychology Principles Every UI/UX Designer Needs to Know.</p>
+                        <div class="date">
+                            <p>June 5, 2020</p>
+                            <button class="pen"><i class="fa fa-pen" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="boxes bg-green">
+                        <div class="star-class">
+                            <button class="star"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        </div>
+                        <p class="note">10 UI & UX Lessons from Designing My Own Product.</p>
+                        <div class="date">
+                            <p>July 2, 2020</p>
+                            <button class="pen"><i class="fa fa-pen" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="boxes bg-lavandar">
+                        <div class="star-class">
+                            <button class="star"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        </div>
+                        <p class="note">52 Design Terms you need to know as a UX Designer.</p>
+                        <div class="date">
+                            <p>August 8, 2020</p>
+                            <button class="pen"><i class="fa fa-pen" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="boxes bg-yellow">
+                        <div class="star-class">
+                            <button class="star"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        </div>
+                        <p class="note">The beginning of screenless design:UI jobs to be taken over by Solution
+                            Architect
+                        </p>
+                        <div class="date">
+                            <p>September 27, 2020</p>
+                            <button class="pen"><i class="fa fa-pen" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="boxes bg-blue">
+                        <div class="star-class">
+                            <button class="star"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        </div>
+                        <p class="note">Text fields & Forms design - UI components series.</p>
+                        <div class="date">
+                            <p>October 3, 2020</p>
+                            <button class="pen"><i class="fa fa-pen" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: "#app",
+            methods: {
+                animate() {
+                    anime({
+                        targets: ".colours",
+                        translateY: function (el, i) {
+                            return (35)
+                        },
+                        opacity: 1,
+                        'border-radius': "50%",
+                        delay: anime.stagger(300),
+                        duration: 1000,
+                        height: "12px",
+                        width: "12px",
+
+                    })
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
